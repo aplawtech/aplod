@@ -1,12 +1,10 @@
 package com.lawstech.aplod.ui.faq
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.lawstech.aplod.data.source.AplodRepository
 import com.lawstech.aplod.data.source.local.entity.PasalEntity
+import com.lawstech.aplod.utils.DataDummy
 
-class FaqViewModel(private val aplodRepository: AplodRepository) : ViewModel() {
+class FaqViewModel : ViewModel() {
 
-//    fun getPasal(): List<PasalEntity> = aplodRepository.getAllPasal()
+    fun getPasal(): List<PasalEntity> = DataDummy.generateDummyPasal()
 }
