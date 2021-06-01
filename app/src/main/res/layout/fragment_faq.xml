@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey_black"
+    tools:context=".ui.about_us.AboutUsFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_pasal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="75dp"
+        tools:listitem="@layout/item_pasal" />
+</FrameLayout>

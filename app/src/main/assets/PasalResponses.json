@@ -1,0 +1,34 @@
+{
+  "pasal" : [
+    {
+      "id": 1,
+      "judul": "Menghina Pemerintah atau Badan Umum",
+      "nomorPasal": "Pasal 207 KUHP",
+      "penjelasan": "Barang siapa dengan sengaja di muka umum dengan lisan atau tulisan menghina suatu penguasa atau badan umum yang ada di Indonesia, diancam dengan pidana penjara paling lama satu tahun enam bulan atau pidana denda paling banyak empat ribu lima ratus rupiah."
+    },
+    {
+      "id": 2,
+      "judul": "Menghina Pemerintah atau Badan Umum",
+      "nomorPasal": "Pasal 208 KUHP",
+      "penjelasan": "Barang siapa dengan sengaja di muka umum dengan lisan atau tulisan menghina suatu penguasa atau hadan umum yang ada di Indonesia, diancam dengan pidana penjara paling lama satu tahun enam bulan atau pidana denda paling banyak empat ribu lima ratus rupiah."
+    },
+    {
+      "id": 3,
+      "judul": "Menghina atau Mencemari Nama Baik Orang Lain",
+      "nomorPasal": "Pasal 27 ayat (3) UU ITE",
+      "penjelasan": "Setiap Orang dengan sengaja dan tanpa hak mendistribusikan dan/atau mentransmisikan dan/atau membuat dapat diaksesnya Informasi Elektronik dan/atau Dokumen Elektronik yang memiliki muatan penghinaan dan/atau pencemaran nama baik."
+    },
+    {
+      "id": 4,
+      "judul": "Mengancam Orang Lain",
+      "nomorPasal": "Pasal 29 UU ITE",
+      "penjelasan": "Setiap Orang dengan sengaja dan tanpa hak mengirimkan Informasi Elektronik dan/atau Dokumen Elektronik yang berisi ancaman kekerasan atau menakut-nakuti yang ditujukan secara pribadi."
+    },
+    {
+      "id": 5,
+      "judul": "Menyinggung SARA",
+      "nomorPasal": "Pasal 28 ayat (2) UU ITE",
+      "penjelasan": "Setiap Orang dengan sengaja dan tanpa hak menyebarkan informasi yang ditujukan untuk menimbulkan rasa kebencian atau permusuhan individu dan/atau kelompok masyarakat tertentu berdasarkan atas suku, agama, ras, dan antargolongan (SARA)."
+    }
+  ]
+}

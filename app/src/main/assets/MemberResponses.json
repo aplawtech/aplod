@@ -1,0 +1,46 @@
+{
+  "members" : [
+    {
+      "id": "C0121288",
+      "name": "Adimas Fachri Ranunegoro",
+      "path": "Cloud Computing",
+      "university": "Universitas Telkom Bandung",
+      "photo": "https://drive.google.com/file/d/1CC-V1VVaRoCYRLbURgHJ0H0r6w5Cs5zI/view?usp=sharing"
+    },
+    {
+      "id": "C0121278",
+      "name": "Agnesia Indryany Mangopo",
+      "path": "Cloud Computing",
+      "university": "Universitas Telkom Bandung",
+      "photo": "https://drive.google.com/file/d/1CC-V1VVaRoCYRLbURgHJ0H0r6w5Cs5zI/view?usp=sharing"
+    },
+    {
+      "id": "A0121283",
+      "name": "Alex Lianardo",
+      "path": "Mobile Development",
+      "university": "Universitas Telkom Bandung",
+      "photo": "https://drive.google.com/file/d/1CC-V1VVaRoCYRLbURgHJ0H0r6w5Cs5zI/view?usp=sharing"
+    },
+    {
+      "id": "A2242180",
+      "name": "Annisaa Utami",
+      "path": "Mobile Development",
+      "university": "UIN Syarif Hidayatullah Jakarta",
+      "photo": "https://drive.google.com/file/d/1CC-V1VVaRoCYRLbURgHJ0H0r6w5Cs5zI/view?usp=sharing"
+    },
+    {
+      "id": "M0040231",
+      "name": "Muhammad Bondan Vitto Ramadhan",
+      "path": "Machine Learning",
+      "university": "Institut Teknologi Sepuluh Nopember Surabaya",
+      "photo": "https://drive.google.com/file/d/1CC-V1VVaRoCYRLbURgHJ0H0r6w5Cs5zI/view?usp=sharing"
+    },
+    {
+      "id": "M0121267",
+      "name": "Muhammad Ikhwan Khalid Nasution",
+      "path": "Machine Learning",
+      "university": "Universitas Telkom Bandung",
+      "photo": "https://drive.google.com/file/d/1CC-V1VVaRoCYRLbURgHJ0H0r6w5Cs5zI/view?usp=sharing"
+    }
+  ]
+}

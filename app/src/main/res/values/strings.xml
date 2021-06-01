@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Aplod</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_faq">FaQ</string>
+    <string name="title_about_us">About Us</string>
+    <string name="label">masukkan kalimat</string>
+    <string name="check">check</string>
+    <string name="ok">OK</string>
+    <string name="not_ok">not ok</string>
+    <string name="kata_kasar_detected">text kamu mengandung kata kasar!</string>
+    <string name="nama_pasal">nama pasal</string>
+    <string name="nomor_pasal">nomor pasal</string>
+    <string name="penjelasan_pasal">penjelasan pasal</string>
+    <string name="langgar_pasal_detected">text kamu berpotensi melanggar UU ITE!</string>
+    <string name="tv_aman">Aman sob! Lets Go APLOD!!</string>
+    <string name="member_full_name">Annisaa Utami</string>
+    <string name="bangkit_id">A2242180</string>
+    <string name="welcome">Welcome to APLOD!</string>
+    <string name="always_check">Always check your comment first!</string>
+    <string name="path">Mobile Development</string>
+    <string name="universitas">Universitas</string>
+    <string name="aplod">Aplod</string>
+    <string name="member">Member</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button_share">button share</string>
+</resources>
