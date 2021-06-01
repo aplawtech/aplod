@@ -3,7 +3,10 @@ Bangkit Academy Final Capstone Project
 
 ## Download Code
 1. Download code from branch "main" **OR** 
-2. Clone Repository
+2. Clone Repository. Click on dropdown Code and **copy** HTTPS link
+```
+git clone https://github.com/aplawtech/aplod.git
+```
 
 ## Next Step
 1. Work on the project locally in your own computer
