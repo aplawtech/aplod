@@ -1,4 +1,4 @@
-package com.lawstech.aplod.ui.about_us
+package com.lawstech.aplod.ui.about_us.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,8 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.lawstech.aplod.R
 import com.lawstech.aplod.databinding.FragmentMemberBinding
+import com.lawstech.aplod.ui.about_us.MemberAdapter
 import com.lawstech.aplod.utils.DataDummy
 
 class MemberFragment : Fragment() {

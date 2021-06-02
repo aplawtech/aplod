@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_about_us"
-        android:name="com.lawstech.aplod.ui.about_us.AboutUsFragment"
+        android:name="com.lawstech.aplod.ui.about_us.fragment.AboutUsFragment"
         android:label="@string/title_about_us"
         tools:layout="@layout/fragment_about_us" />
 </navigation>

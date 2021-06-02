@@ -1,4 +1,4 @@
-package com.lawstech.aplod.ui.about_us
+package com.lawstech.aplod.ui.about_us.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.lawstech.aplod.databinding.FragmentAboutUsBinding
+import com.lawstech.aplod.ui.about_us.AboutUsPageAdapter
 
 class AboutUsFragment : Fragment() {
 

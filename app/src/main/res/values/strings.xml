@@ -24,4 +24,12 @@
     <string name="member">Member</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="button_share">button share</string>
+    <string name="next">Next</string>
+    <string name="from">from</string>
+    <string name="about_aplod">About Aplod</string>
+    <string name="aplod_stand_for">Aplod stand for</string>
+    <string name="kepanjangan_aplod">"Aman Pesannya Let's gO uploaD"</string>
+    <string name="description_aplod">is an app that solely focused to make people preventing people using bad words
+        for typing or saying something in social media because people often
+    getting the ITE law penalty because of their bad behavior.</string>
 </resources>
