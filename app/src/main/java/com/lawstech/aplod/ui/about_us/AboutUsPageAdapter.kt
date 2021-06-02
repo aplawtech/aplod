@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.lawstech.aplod.R
+import com.lawstech.aplod.ui.about_us.fragment.AplodAboutFragment
+import com.lawstech.aplod.ui.about_us.fragment.MemberFragment
 
 class AboutUsPageAdapter(private val mContext: Context, fm: FragmentManager) : FragmentPagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
 
@@ -19,7 +21,7 @@ class AboutUsPageAdapter(private val mContext: Context, fm: FragmentManager) : F
     override fun getItem(position: Int): Fragment =
         when (position) {
             0 -> MemberFragment()
-            1 -> MemberFragment()
+            1 -> AplodAboutFragment()
             else -> Fragment()
         }
 

@@ -15,4 +15,7 @@
     <color name="text_color">#363732</color>
     <color name="lightest_blue">#e1f5fe</color>
     <color name="green_success">#5cb85c</color>
+    <color name="quite_dark_blue">#273036</color>
+    <color name="young_blue">#bce1fb</color>
+    <color name="grey2">#b3bdd7</color>
 </resources>

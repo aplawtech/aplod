@@ -14,7 +14,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/item_container"
-        android:background="@color/purple_dark"
+        android:background="@drawable/bg_recyclerview_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="15dp">
