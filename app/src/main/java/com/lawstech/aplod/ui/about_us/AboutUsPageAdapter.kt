@@ -20,8 +20,8 @@ class AboutUsPageAdapter(private val mContext: Context, fm: FragmentManager) : F
 
     override fun getItem(position: Int): Fragment =
         when (position) {
-            0 -> MemberFragment()
-            1 -> AplodAboutFragment()
+            0 -> AplodAboutFragment()
+            1 -> MemberFragment()
             else -> Fragment()
         }
 

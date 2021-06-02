@@ -11,7 +11,7 @@ import com.lawstech.aplod.databinding.FragmentFaqBinding
 
 class FaqFragment : Fragment() {
 
-    private lateinit var faqViewModel: FaqViewModel
+    private lateinit var viewModel: FaqViewModel
     private lateinit var fragmentFaqBinding: FragmentFaqBinding
 
     override fun onCreateView(
@@ -26,8 +26,8 @@ class FaqFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         if (activity != null) {
-            faqViewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory())[FaqViewModel::class.java]
-            val pasal = faqViewModel.getPasal()
+            viewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory())[FaqViewModel::class.java]
+            val pasal = viewModel.getPasal()
 
             val pasalAdapter = FaqAdapter()
             pasalAdapter.setPasal(pasal)
