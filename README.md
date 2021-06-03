@@ -9,7 +9,7 @@ Bangkit Academy Final Capstone Project
 git clone https://github.com/aplawtech/aplod.git
 ```
 
-## Next Step
+### Next Step
 1. Work on the project locally in your own computer
 2. **Create new Branch** based on the feature you make using " git checkout -b <new_branch> " <br/>
 Example :
@@ -26,3 +26,7 @@ Example:
 ```
 git push origin layout-member
 ```
+## Fork Repository
+In order to duplicate our repository to become your repository on your own github account, you need to **fork** this repository
+![image](https://user-images.githubusercontent.com/85149518/120605441-405eb400-c478-11eb-9304-4dcd1fa61a71.png) </br>
+Forking repository allows you to modificate this project without affecting the original project.
