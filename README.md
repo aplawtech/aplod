@@ -5,7 +5,7 @@
 Hellow. Here is our repository for Bangkit 2021 Capstone project. Our team consist of 2 Machine Learning, 2 Android, and 2 Cloud Computing.
  
 
-## Our Knights
+## Our Knights : Law's Tech
 
 |          Nama         | Bangkit-ID |       Path       |
 |:---------------------:|:----------:|:----------------:|
