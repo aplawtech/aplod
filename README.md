@@ -25,7 +25,7 @@ We make a mobile application named APLOD (Aman Pesannya Let’s gO uploaD). APLO
 
 
 
-## Tech Stack
+## Tech Stacks
 
 ![stack](https://user-images.githubusercontent.com/55023518/121032474-7fbd3580-c7d5-11eb-9b0a-7c7ed74f8a46.jpg)
 
