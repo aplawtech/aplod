@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "800982843616",
+    "project_id": "capstone-b21-cap0036",
+    "storage_bucket": "capstone-b21-cap0036.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800982843616:android:f9eedadad41524a2805085",
+        "android_client_info": {
+          "package_name": "com.lawstech.aplod"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800982843616-fsnceuqb22ndt92792m36ac7g0m3ba48.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lawstech.aplod",
+            "certificate_hash": "1eb2deb0512b9b29df15aa0e43846ced4ddb393a"
+          }
+        },
+        {
+          "client_id": "800982843616-rft5aocm88ct9gloa1m1008b3b8h02vm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCFOR4ckXbhlsRg1dwyjPc-hQc4XU09mk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800982843616-rft5aocm88ct9gloa1m1008b3b8h02vm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
