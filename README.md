@@ -54,7 +54,13 @@ after cloning the repository, go to the aplod directory and run the following co
 
 We already provide you all of the data set and NLP model, so you just need to run the command above
 
-
+## Library Used in Android Application
+1. [RecyclerView](https://developer.android.com/guide/topics/ui/layout/recyclerview)
+2. [Lifecycle](https://developer.android.com/jetpack/androidx/releases/lifecycle)
+3. [Glide](https://github.com/bumptech/glide)
+4. [CircleImageView by hdodenhof](https://github.com/hdodenhof/CircleImageView)
+5. [Retrofit 2](https://square.github.io/retrofit/)
+6. [Material Design](https://material.io/develop/android)
 
 ## Project Update
 
