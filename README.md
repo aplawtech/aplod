@@ -1,7 +1,6 @@
 ![logo fix no ellipse](https://user-images.githubusercontent.com/55023518/121027586-4a164d80-c7d1-11eb-9432-63b89e9af274.png)
 
-# Bangkit 2021 Capstone Team : B21-CAP0036 
-Law's Tech Team
+# Bangkit 2021 Capstone Team : Law's Tech Team (B21-CAP0036)
 
 Hellow. Here is our repository for Bangkit 2021 Capstone project. Our team consist of 2 Machine Learning, 2 Android, and 2 Cloud Computing.
  
