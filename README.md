@@ -19,6 +19,12 @@ Hellow. Here is our repository for Bangkit 2021 Capstone project. Our team consi
 ## What is this project
 We make a mobile application named APLOD (Aman Pesannya Let’s gO uploaD). APLOD is a hate speech comment detector application integrated with ITE Law. With this application, everyone can check whether a sentence contains harmful words that can violate ITE Law before uploading it to social media. We want to reduce hate comments made by Indonesian people on social media platforms such as Twitter, Instagram, etc. Hate comments not only can hurt someone but also can lead to ITE Law violation.
 
+<img src="https://user-images.githubusercontent.com/55023518/121036560-09223700-c7d9-11eb-8462-714a6715c4c2.jpg" alt="Logo" width="270" height="576.5">&nbsp; &nbsp;
+<img src="https://user-images.githubusercontent.com/55023518/121036798-26570580-c7d9-11eb-891a-bd822ba488c1.jpg" alt="Logo" width="270" height="576.5">&nbsp; &nbsp;
+<img src="https://user-images.githubusercontent.com/55023518/121036879-35d64e80-c7d9-11eb-8867-a4da8ebecd6b.jpg" alt="Logo" width="270" height="576.5">
+
+
+
 ## Tech Stack
 
 ![stack](https://user-images.githubusercontent.com/55023518/121032474-7fbd3580-c7d5-11eb-9b0a-7c7ed74f8a46.jpg)
