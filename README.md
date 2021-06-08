@@ -29,6 +29,12 @@ We make a mobile application named APLOD (Aman Pesannya Let’s gO uploaD). APLO
 
 ![stack](https://user-images.githubusercontent.com/55023518/121032474-7fbd3580-c7d5-11eb-9b0a-7c7ed74f8a46.jpg)
 
+## Our Model Performance
+Aplod-Net has been trained on over 10.000 labeled Sentences and got 85% accuracy on test data
+
+![Capture1](https://user-images.githubusercontent.com/56960819/121265130-7ec5fa00-c8e2-11eb-8349-10e3ec87e13e.PNG)
+
+![Capture2](https://user-images.githubusercontent.com/56960819/121265167-8d141600-c8e2-11eb-8e88-594c43d7e334.PNG)
 
 ## Guidance for running our model on local
 Make sure you intalled all this dependencies first on your local machine. You can use conda virtual env for making things easier with pip
