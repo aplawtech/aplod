@@ -1,13 +1,12 @@
 package com.lawstech.aplod.ui.home
 
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.lawstech.aplod.data.AplodRepository
+import com.lawstech.aplod.data.source.local.entity.SentimentEntity
 
-class HomeViewModel : ViewModel() {
+class HomeViewModel(private val mAplodRepository: AplodRepository) : ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
-    }
-    val text: LiveData<String> = _text
+    fun getSentiment(kalimat: String): LiveData<SentimentEntity> =
+        mAplodRepository.getSentiment(kalimat)
 }
