@@ -62,6 +62,7 @@
 
         <ImageButton
             android:id="@+id/btn_share"
+            android:visibility="invisible"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/btn_check"
@@ -72,7 +73,47 @@
             app:srcCompat="@drawable/ic_baseline_share" />
 
         <TextView
+            android:id="@+id/aplod"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btn_send"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="161dp"
+            android:layout_marginTop="559dp"
+            android:layout_marginEnd="191dp"
+            android:layout_marginBottom="74dp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:rotation="-27"
+            android:text="@string/aplod"
+            android:textColor="@color/purple_primary"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_send"
+            android:visibility="invisible"
+            android:layout_width="96dp"
+            android:layout_height="93dp"
+            android:layout_below="@id/textField"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="339dp"
+            android:layout_marginEnd="159dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/paper_plane"
+            android:backgroundTint="@color/purple_primary"
+            android:contentDescription="TODO"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/white" />
+
+        <TextView
             android:id="@+id/tv_sentimen"
+            android:visibility="invisible"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/btn_share"
@@ -93,7 +134,7 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_marginBottom="12dp"
-            android:visibility="visible"/>
+            android:visibility="invisible"/>
 
         <ImageView
             android:id="@+id/img_not_ok"
@@ -106,10 +147,11 @@
             android:layout_marginTop="12dp"
             android:layout_marginBottom="12dp"
             android:contentDescription="@string/not_ok"
-            android:visibility="visible"/>
+            android:visibility="invisible"/>
 
         <TextView
             android:id="@+id/tv_aman"
+            android:visibility="invisible"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/tv_aman"
@@ -122,6 +164,7 @@
 
         <TextView
             android:id="@+id/kata_kasar_detected"
+            android:visibility="invisible"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/kata_kasar_detected"
@@ -134,6 +177,7 @@
 
         <TextView
             android:id="@+id/langgar_pasal_detected"
+            android:visibility="invisible"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/langgar_pasal_detected"
@@ -151,5 +195,14 @@
             android:layout_marginTop="8dp"
             android:layout_below="@+id/langgar_pasal_detected"
             tools:listitem="@layout/item_pasal" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:visibility="invisible"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/btn_send"
+            android:layout_marginBottom="237dp" />
     </RelativeLayout>
 </ScrollView>
