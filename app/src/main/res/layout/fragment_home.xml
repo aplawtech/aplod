@@ -59,67 +59,27 @@
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp" />
 
-
-        <ImageButton
-            android:id="@+id/btn_share"
-            android:visibility="invisible"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btn_check"
-            android:layout_alignEnd="@+id/btn_check"
-            android:layout_margin="7dp"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/button_share"
-            app:srcCompat="@drawable/ic_baseline_share" />
-
         <TextView
-            android:id="@+id/aplod"
-            android:visibility="invisible"
+            android:id="@+id/txt_sentimen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/btn_send"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="161dp"
-            android:layout_marginTop="559dp"
-            android:layout_marginEnd="191dp"
-            android:layout_marginBottom="74dp"
+            android:layout_below="@id/btn_check"
+            android:layout_centerInParent="true"
+            android:layout_marginVertical="10dp"
+            android:textColor="@color/white"
             android:fontFamily="@font/poppins_bold"
-            android:gravity="center"
-            android:rotation="-27"
-            android:text="@string/aplod"
-            android:textColor="@color/purple_primary"
-            android:textSize="12sp"
-            android:textStyle="bold" />
-
-        <ImageButton
-            android:id="@+id/btn_send"
-            android:visibility="invisible"
-            android:layout_width="96dp"
-            android:layout_height="93dp"
-            android:layout_below="@id/textField"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="156dp"
-            android:layout_marginTop="339dp"
-            android:layout_marginEnd="159dp"
-            android:layout_marginBottom="16dp"
-            android:background="@drawable/paper_plane"
-            android:backgroundTint="@color/purple_primary"
-            android:contentDescription="TODO"
-            android:fontFamily="@font/poppins_regular"
-            android:textColor="@color/white" />
+            android:textSize="16sp"
+            android:text="@string/sentiment"
+            android:visibility="invisible"/>
 
         <TextView
             android:id="@+id/tv_sentimen"
-            android:visibility="invisible"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btn_share"
+            android:layout_below="@id/txt_sentimen"
             android:layout_centerInParent="true"
             android:textColor="@color/white"
-            android:fontFamily="@font/poppins_regular"
+            android:fontFamily="@font/poppins_italic"
             android:textSize="16sp"
             tools:text="@string/negatif" />
 
@@ -130,10 +90,8 @@
             android:src="@drawable/ok"
             android:layout_below="@id/tv_sentimen"
             android:contentDescription="@string/ok"
-            android:layout_marginTop="12dp"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_marginBottom="12dp"
+            android:layout_marginVertical="12dp"
+            android:layout_centerInParent="true"
             android:visibility="invisible"/>
 
         <ImageView
@@ -142,10 +100,8 @@
             android:layout_height="100dp"
             android:src="@drawable/not_ok"
             android:layout_below="@id/tv_sentimen"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="12dp"
+            android:layout_centerInParent="true"
+            android:layout_marginVertical="12dp"
             android:contentDescription="@string/not_ok"
             android:visibility="invisible"/>
 
@@ -156,7 +112,7 @@
             android:layout_height="wrap_content"
             android:text="@string/tv_aman"
             android:layout_below="@id/img_ok"
-            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             android:textSize="18sp"
             android:fontFamily="@font/poppins_bold"
             android:textColor="@color/green_success"
@@ -169,7 +125,6 @@
             android:layout_height="wrap_content"
             android:text="@string/kata_kasar_detected"
             android:layout_below="@id/img_not_ok"
-            android:layout_marginTop="20dp"
             android:textSize="18sp"
             android:fontFamily="@font/poppins_bold"
             android:textColor="@android:color/holo_red_light"
@@ -188,6 +143,41 @@
             android:textColor="@color/light_blue_primary"
             android:gravity="center" />
 
+        <TextView
+            android:id="@+id/aplod"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_aman"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="161dp"
+            android:layout_marginTop="555dp"
+            android:layout_marginEnd="191dp"
+            android:layout_marginBottom="74dp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:rotation="-27"
+            android:text="@string/aplod"
+            android:textColor="@color/purple_primary"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_send"
+            android:visibility="invisible"
+            android:layout_width="96dp"
+            android:layout_height="93dp"
+            android:layout_below="@id/tv_aman"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/paper_plane"
+            android:backgroundTint="@color/purple_primary"
+            android:contentDescription="@string/button_share"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/white" />
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_pasal"
             android:layout_width="match_parent"
@@ -200,6 +190,7 @@
             android:id="@+id/progressBar"
             android:visibility="invisible"
             style="?android:attr/progressBarStyle"
+            android:layout_below="@id/txt_sentimen"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignBottom="@+id/btn_send"

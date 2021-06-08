@@ -56,6 +56,7 @@ class HomeFragment : Fragment() {
         fragmentHomeBinding.progressBar.visibility = View.VISIBLE
         fragmentHomeBinding.imgNotOk.visibility = View.INVISIBLE
         fragmentHomeBinding.imgOk.visibility = View.INVISIBLE
+        fragmentHomeBinding.txtSentimen.visibility = View.INVISIBLE
         fragmentHomeBinding.tvAman.visibility = View.INVISIBLE
         fragmentHomeBinding.kataKasarDetected.visibility = View.INVISIBLE
         fragmentHomeBinding.langgarPasalDetected.visibility = View.INVISIBLE
@@ -65,6 +66,7 @@ class HomeFragment : Fragment() {
         if (kalimat.isEmpty()) {
             fragmentHomeBinding.imgNotOk.visibility = View.INVISIBLE
             fragmentHomeBinding.imgOk.visibility = View.INVISIBLE
+            fragmentHomeBinding.txtSentimen.visibility = View.INVISIBLE
             fragmentHomeBinding.tvAman.visibility = View.INVISIBLE
             fragmentHomeBinding.aplod.visibility = View.INVISIBLE
             fragmentHomeBinding.kataKasarDetected.visibility = View.INVISIBLE
@@ -83,6 +85,7 @@ class HomeFragment : Fragment() {
                     fragmentHomeBinding.imgNotOk.visibility = View.VISIBLE
                     fragmentHomeBinding.imgOk.visibility = View.INVISIBLE
                     fragmentHomeBinding.tvAman.visibility = View.INVISIBLE
+                    fragmentHomeBinding.txtSentimen.visibility = View.VISIBLE
                     fragmentHomeBinding.kataKasarDetected.visibility = View.VISIBLE
                     fragmentHomeBinding.langgarPasalDetected.visibility = View.VISIBLE
                     fragmentHomeBinding.aplod.visibility = View.INVISIBLE
@@ -93,6 +96,18 @@ class HomeFragment : Fragment() {
                     fragmentHomeBinding.imgNotOk.visibility = View.INVISIBLE
                     fragmentHomeBinding.imgOk.visibility = View.VISIBLE
                     fragmentHomeBinding.tvAman.visibility = View.VISIBLE
+                    fragmentHomeBinding.txtSentimen.visibility = View.VISIBLE
+                    fragmentHomeBinding.kataKasarDetected.visibility = View.INVISIBLE
+                    fragmentHomeBinding.langgarPasalDetected.visibility = View.INVISIBLE
+                    fragmentHomeBinding.aplod.visibility = View.VISIBLE
+                    fragmentHomeBinding.btnSend.visibility = View.VISIBLE
+                    fragmentHomeBinding.progressBar.visibility = View.INVISIBLE
+                }
+                "Netral" -> {
+                    fragmentHomeBinding.imgNotOk.visibility = View.INVISIBLE
+                    fragmentHomeBinding.imgOk.visibility = View.VISIBLE
+                    fragmentHomeBinding.tvAman.visibility = View.VISIBLE
+                    fragmentHomeBinding.txtSentimen.visibility = View.VISIBLE
                     fragmentHomeBinding.kataKasarDetected.visibility = View.INVISIBLE
                     fragmentHomeBinding.langgarPasalDetected.visibility = View.INVISIBLE
                     fragmentHomeBinding.aplod.visibility = View.VISIBLE
@@ -103,6 +118,7 @@ class HomeFragment : Fragment() {
                     fragmentHomeBinding.imgNotOk.visibility = View.INVISIBLE
                     fragmentHomeBinding.imgOk.visibility = View.INVISIBLE
                     fragmentHomeBinding.tvAman.visibility = View.INVISIBLE
+                    fragmentHomeBinding.txtSentimen.visibility = View.INVISIBLE
                     fragmentHomeBinding.kataKasarDetected.visibility = View.INVISIBLE
                     fragmentHomeBinding.langgarPasalDetected.visibility = View.INVISIBLE
                     fragmentHomeBinding.aplod.visibility = View.INVISIBLE
@@ -118,6 +134,7 @@ class HomeFragment : Fragment() {
         fragmentHomeBinding.imgNotOk.visibility = View.INVISIBLE
         fragmentHomeBinding.imgOk.visibility = View.INVISIBLE
         fragmentHomeBinding.tvAman.visibility = View.INVISIBLE
+        fragmentHomeBinding.txtSentimen.visibility = View.INVISIBLE
         fragmentHomeBinding.kataKasarDetected.visibility = View.INVISIBLE
         fragmentHomeBinding.langgarPasalDetected.visibility = View.INVISIBLE
         fragmentHomeBinding.aplod.visibility = View.INVISIBLE
@@ -127,6 +144,7 @@ class HomeFragment : Fragment() {
             fragmentHomeBinding.imgNotOk.visibility = View.INVISIBLE
             fragmentHomeBinding.imgOk.visibility = View.INVISIBLE
             fragmentHomeBinding.tvAman.visibility = View.INVISIBLE
+            fragmentHomeBinding.txtSentimen.visibility = View.INVISIBLE
             fragmentHomeBinding.aplod.visibility = View.INVISIBLE
             fragmentHomeBinding.kataKasarDetected.visibility = View.INVISIBLE
             fragmentHomeBinding.langgarPasalDetected.visibility = View.INVISIBLE
@@ -144,6 +162,7 @@ class HomeFragment : Fragment() {
                     fragmentHomeBinding.imgNotOk.visibility = View.VISIBLE
                     fragmentHomeBinding.imgOk.visibility = View.INVISIBLE
                     fragmentHomeBinding.tvAman.visibility = View.INVISIBLE
+                    fragmentHomeBinding.txtSentimen.visibility = View.VISIBLE
                     fragmentHomeBinding.kataKasarDetected.visibility = View.VISIBLE
                     fragmentHomeBinding.langgarPasalDetected.visibility = View.VISIBLE
                     fragmentHomeBinding.aplod.visibility = View.INVISIBLE
@@ -154,6 +173,19 @@ class HomeFragment : Fragment() {
                     fragmentHomeBinding.imgNotOk.visibility = View.INVISIBLE
                     fragmentHomeBinding.imgOk.visibility = View.VISIBLE
                     fragmentHomeBinding.tvAman.visibility = View.VISIBLE
+                    fragmentHomeBinding.txtSentimen.visibility = View.VISIBLE
+                    fragmentHomeBinding.kataKasarDetected.visibility = View.INVISIBLE
+                    fragmentHomeBinding.langgarPasalDetected.visibility = View.INVISIBLE
+                    fragmentHomeBinding.aplod.visibility = View.VISIBLE
+                    fragmentHomeBinding.btnSend.visibility = View.VISIBLE
+                    fragmentHomeBinding.progressBar.visibility = View.INVISIBLE
+                    onShareClick()
+                }
+                "Netral" -> {
+                    fragmentHomeBinding.imgNotOk.visibility = View.INVISIBLE
+                    fragmentHomeBinding.imgOk.visibility = View.VISIBLE
+                    fragmentHomeBinding.tvAman.visibility = View.VISIBLE
+                    fragmentHomeBinding.txtSentimen.visibility = View.VISIBLE
                     fragmentHomeBinding.kataKasarDetected.visibility = View.INVISIBLE
                     fragmentHomeBinding.langgarPasalDetected.visibility = View.INVISIBLE
                     fragmentHomeBinding.aplod.visibility = View.VISIBLE
@@ -165,6 +197,7 @@ class HomeFragment : Fragment() {
                     fragmentHomeBinding.imgNotOk.visibility = View.INVISIBLE
                     fragmentHomeBinding.imgOk.visibility = View.INVISIBLE
                     fragmentHomeBinding.tvAman.visibility = View.INVISIBLE
+                    fragmentHomeBinding.txtSentimen.visibility = View.VISIBLE
                     fragmentHomeBinding.kataKasarDetected.visibility = View.INVISIBLE
                     fragmentHomeBinding.langgarPasalDetected.visibility = View.INVISIBLE
                     fragmentHomeBinding.aplod.visibility = View.INVISIBLE
