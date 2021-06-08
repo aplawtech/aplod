@@ -62,7 +62,7 @@ def take_inp():
 @app.post('/predict') #prediction on data
 def predict(text:str = Form(...)): #input is from forms
     clean_text = my_pipeline(text) #cleaning and preprocessing of the texts
-    loaded_model = tf.keras.models.load_model('aplod_version_2.h5') #loading the saved model
+    loaded_model = tf.keras.models.load_model('model/aplod_version_2.h5') #loading the saved model
     predictions = loaded_model.predict(clean_text) #making predictions
     sentiment = int(np.argmax(predictions)) #index of maximum prediction
     probability = max(predictions.tolist()[0]) #probability of maximum prediction
