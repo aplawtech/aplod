@@ -9,10 +9,10 @@ Hellow. Here is our repository for Bangkit 2021 Capstone project. Our team consi
 
 |          Nama         | Bangkit-ID |       Path       |
 |:---------------------:|:----------:|:----------------:|
-|  Muhammad Bondan V.R  |  M0040231  | Machine Learning |
-|  Muhammad Ikhwan K.N  |  M0121267  | Machine Learning |
-|   Adimas Fachri R.    |  C0121288  |  Cloud Computing |
-|  Agnesia Indryany M.  |  C0121278  |  Cloud Computing |
+|  Muhammad Bondan Vitto Ramadhan  |  M0040231  | Machine Learning |
+|  Muhammad Ikhwan Khalid Nasution  |  M0121267  | Machine Learning |
+|   Adimas Fachri Ranunegoro    |  C0121288  |  Cloud Computing |
+|  Agnesia Indryany Mangopo  |  C0121278  |  Cloud Computing |
 |    Alex Lianardo      |  A0121283  |      Android     |
 |    Annisaa Utami      |  A2242180  |      Android     |
 
