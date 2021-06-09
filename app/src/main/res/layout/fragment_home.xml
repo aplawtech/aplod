@@ -1,155 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:fitsSystemWindows="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey_black">
+    android:background="@drawable/home_fragment">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:background="@color/grey_black"
-        tools:context=".ui.home.HomeFragment" >
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="100dp"
+        android:hint="@string/label"
+        android:textColorHint="@color/white"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <View
-            android:id="@+id/waveView"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_comment"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@drawable/ic_purple_wave" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textField"
-            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:textColorHint="@color/white"
-            android:hint="@string/label"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@id/waveView"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_marginTop="24dp"
-            app:endIconTint="@color/white"
-            app:endIconMode="clear_text">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/input_comment"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textMultiLine"
-                android:lines="3"
-                android:gravity="top"
-                android:overScrollMode="always"
-                android:scrollbars="vertical"
-                android:scrollbarStyle="insideInset"
-                android:textColor="@color/white"
-                android:fontFamily="@font/poppins_regular" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <Button
-            android:id="@+id/btn_check"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/textField"
-            android:layout_centerHorizontal="true"
-            android:backgroundTint="@color/purple_primary"
             android:fontFamily="@font/poppins_regular"
-            android:textColor="@color/white"
-            android:text="@string/check"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp" />
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 
-        <ImageButton
-            android:id="@+id/btn_share"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btn_check"
-            android:layout_alignEnd="@+id/btn_check"
-            android:layout_margin="7dp"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/button_share"
-            app:srcCompat="@drawable/ic_baseline_share" />
+    <Button
+        android:id="@+id/btn_check"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="@color/purple_primary"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/check"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textField" />
 
-        <TextView
-            android:id="@+id/tv_sentimen"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/btn_share"
-            android:layout_centerInParent="true"
-            android:textColor="@color/white"
-            android:fontFamily="@font/poppins_regular"
-            android:textSize="16sp"
-            tools:text="@string/negatif" />
 
-        <ImageView
-            android:id="@+id/img_ok"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/ok"
-            android:layout_below="@id/tv_sentimen"
-            android:contentDescription="@string/ok"
-            android:layout_marginTop="12dp"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_marginBottom="12dp"
-            android:visibility="visible"/>
+    <TextView
+        android:id="@+id/tv_sentimen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="330dp"
+        android:layout_marginBottom="77dp"
+        android:text="@string/check"
+        app:layout_constraintBottom_toTopOf="@+id/textField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/img_not_ok"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/not_ok"
-            android:layout_below="@id/tv_sentimen"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="12dp"
-            android:contentDescription="@string/not_ok"
-            android:visibility="visible"/>
 
-        <TextView
-            android:id="@+id/tv_aman"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/tv_aman"
-            android:layout_below="@id/img_ok"
-            android:layout_marginTop="20dp"
-            android:textSize="18sp"
-            android:fontFamily="@font/poppins_bold"
-            android:textColor="@color/green_success"
-            android:gravity="center" />
+    <ImageView
+        android:id="@+id/img_ok"
+        android:layout_width="298dp"
+        android:layout_height="191dp"
+        android:layout_marginTop="50dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_check"
+        app:srcCompat="@drawable/ok"
+        tools:ignore="ContentDescription" />
 
-        <TextView
-            android:id="@+id/kata_kasar_detected"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/kata_kasar_detected"
-            android:layout_below="@id/img_not_ok"
-            android:layout_marginTop="20dp"
-            android:textSize="18sp"
-            android:fontFamily="@font/poppins_bold"
-            android:textColor="@android:color/holo_red_light"
-            android:gravity="center"/>
+    <ImageButton
+        android:id="@+id/btn_send"
+        android:layout_width="114dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/paper_plane"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_ok"
+        tools:ignore="ContentDescription" />
 
-        <TextView
-            android:id="@+id/langgar_pasal_detected"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/langgar_pasal_detected"
-            android:layout_below="@id/kata_kasar_detected"
-            android:layout_marginTop="12dp"
-            android:textSize="16sp"
-            android:fontFamily="@font/poppins_bold"
-            android:textColor="@color/light_blue_primary"
-            android:gravity="center" />
+    <ImageView
+        android:id="@+id/img_not_ok"
+        android:layout_width="305dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="75dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_check"
+        app:srcCompat="@drawable/not_ok"
+        tools:ignore="ContentDescription" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_pasal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
-            android:layout_below="@+id/langgar_pasal_detected"
-            tools:listitem="@layout/item_pasal" />
-    </RelativeLayout>
-</ScrollView>
+    <TextView
+        android:id="@+id/langgar_pasal_detected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/langgar_pasal_detected"
+        android:textColor="@color/light_blue_primary"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btn_send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_not_ok"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/undang_undang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/nama_pasal"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/langgar_pasal_detected" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="384dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
