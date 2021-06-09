@@ -1,4 +1,4 @@
-FROM tiangolo/uvicorn-gunicorn-fastapi:python3.7
+FROM python:3.7-slim
 
 ENV APP_HOME /app
 WORKDIR $APP_HOME
