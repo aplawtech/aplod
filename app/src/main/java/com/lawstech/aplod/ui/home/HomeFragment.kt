@@ -137,6 +137,7 @@ class HomeFragment : Fragment() {
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
                 fragmentHomeBinding.imgNotOk.visibility = View.INVISIBLE
                 fragmentHomeBinding.imgOk.visibility = View.INVISIBLE
+                fragmentHomeBinding.tvAman.visibility = View.INVISIBLE
                 fragmentHomeBinding.kataKasarDetected.visibility = View.INVISIBLE
                 fragmentHomeBinding.langgarPasalDetected.visibility = View.INVISIBLE
                 fragmentHomeBinding.pasalCard.visibility = View.INVISIBLE
@@ -169,6 +170,7 @@ class HomeFragment : Fragment() {
         } else {
             fragmentHomeBinding.progressBar.visibility = View.INVISIBLE
             fragmentHomeBinding.imgOk.visibility = View.VISIBLE
+            fragmentHomeBinding.tvAman.visibility = View.VISIBLE
             fragmentHomeBinding.btnSend.visibility = View.VISIBLE
         }
     }

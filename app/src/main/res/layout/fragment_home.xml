@@ -90,17 +90,33 @@
         app:srcCompat="@drawable/ok"
         tools:ignore="ContentDescription" />
 
+    <TextView
+        android:id="@+id/tv_aman"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_aman"
+        android:layout_below="@id/img_ok"
+        android:layout_marginVertical="20dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/green_success"
+        app:layout_constraintTop_toBottomOf="@id/img_ok"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
     <ImageButton
         android:id="@+id/btn_send"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/paper_plane"
         android:visibility="invisible"
+        android:layout_marginBottom="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_ok"
+        app:layout_constraintTop_toBottomOf="@+id/tv_aman"
         tools:ignore="ContentDescription" />
 
     <ImageView
@@ -170,7 +186,6 @@
             android:visibility="invisible" />
     </com.google.android.material.card.MaterialCardView>
 
-
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyle"
@@ -182,6 +197,5 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
