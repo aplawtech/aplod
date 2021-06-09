@@ -60,6 +60,8 @@ after cloning the repository, go to the aplod directory and run the following co
 
 We already provide you all of the data set and NLP model, so you just need to run the command above
 
+You can also test our API in here [FLASK_API](https://aplodfix-wk452lxpxq-et.a.run.app/predict)
+
 ## Library Used in Android Application
 1. [RecyclerView](https://developer.android.com/guide/topics/ui/layout/recyclerview)
 2. [Lifecycle](https://developer.android.com/jetpack/androidx/releases/lifecycle)
