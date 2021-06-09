@@ -71,28 +71,28 @@ object DataDummy {
             2,
                 "Menghina Pemerintah atau Badan Umum",
                 "Pasal 208 KUHP",
-                "Barang siapa dengan sengaja di muka umum dengan lisan atau tulisan menghina suatu penguasa atau hadan umum yang ada di Indonesia, diancam dengan pidana penjara paling lama satu tahun enam bulan atau pidana denda paling banyak empat ribu lima ratus rupiah."
+                "Barang siapa menyiapkan, mempertontonkan atau menempelkan tulisan atau gambar yang isinya penghinaan bagi sesuatu kekuasaan yang ada di Negara Indonesia atau bagi sesuatu mejelis umum yang ada di sana, dengan niat supaya isi yang menghina itu diketahui oleh orang banyak atau lebih diketahui oleh orang banyak, di hukum penjara paling lama 4 bulan atau denda sebanyak Rp 4.500.000."
         ))
         pasal.add(
             PasalEntity(
             3,
                 "Menghina atau Mencemari Nama Baik Orang Lain",
                 "Pasal 27 ayat (3) UU ITE",
-                "Setiap Orang dengan sengaja dan tanpa hak mendistribusikan dan/atau mentransmisikan dan/atau membuat dapat diaksesnya Informasi Elektronik dan/atau Dokumen Elektronik yang memiliki muatan penghinaan dan/atau pencemaran nama baik."
+                "Setiap Orang dengan sengaja dan tanpa hak mendistribusikan dan/atau mentransmisikan dan/atau membuat dapat diaksesnya Informasi Elektronik dan/atau Dokumen Elektronik yang memiliki muatan penghinaan dan/atau pencemaran nama baik.” Perbuatan tersebut diancam pidana penjara paling lama 4 (empat) tahun dan/atau denda paling banyak 750 juta Rupiah."
         ))
         pasal.add(
             PasalEntity(
             4,
                 "Mengancam Orang Lain",
                 "Pasal 29 UU ITE",
-                "Setiap Orang dengan sengaja dan tanpa hak mengirimkan Informasi Elektronik dan/atau Dokumen Elektronik yang berisi ancaman kekerasan atau menakut-nakuti yang ditujukan secara pribadi."
+                "Setiap Orang dengan sengaja dan tanpa hak mengirimkan Informasi Elektronik dan/atau Dokumen Elektronik yang berisi ancaman kekerasan atau menakut-nakuti yang ditujukan secara pribadi.”  Perbuatan tersebut diancam pidana penjara paling lama 4 (empat) tahun dan/atau denda paling banyak Rp750 juta."
         ))
         pasal.add(
             PasalEntity(
             5,
                 "Menyinggung SARA",
                 "Pasal 28 ayat (2) UU ITE",
-                "Setiap Orang dengan sengaja dan tanpa hak menyebarkan informasi yang ditujukan untuk menimbulkan rasa kebencian atau permusuhan individu dan/atau kelompok masyarakat tertentu berdasarkan atas suku, agama, ras, dan antargolongan (SARA)."
+                "Setiap Orang dengan sengaja dan tanpa hak menyebarkan informasi yang ditujukan untuk menimbulkan rasa kebencian atau permusuhan individu dan/atau kelompok masyarakat tertentu berdasarkan atas suku, agama, ras, dan antargolongan (SARA).” Perbuatan tersebut diancam pidana penjara paling lama 6 (enam) tahun dan/atau denda paling banyak 1 Miliar Rupiah."
         ))
 
         return pasal
