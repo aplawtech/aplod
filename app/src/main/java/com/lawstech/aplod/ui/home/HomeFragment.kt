@@ -22,7 +22,7 @@ class HomeFragment : Fragment() {
 
     private lateinit var homeViewModel: HomeViewModel
     private lateinit var fragmentHomeBinding: FragmentHomeBinding
-    private lateinit var input: String
+    private lateinit var kalimat: String
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -48,126 +48,80 @@ class HomeFragment : Fragment() {
     }
 
     private fun onShareClick() {
-        input = fragmentHomeBinding.inputComment.text.toString()
+        kalimat = fragmentHomeBinding.inputComment.text.toString()
         if (activity != null) {
             val mimeType = "text/plain"
             ShareCompat.IntentBuilder
                 .from(requireActivity())
                 .setType(mimeType)
                 .setChooserTitle("Bagikan aplikasi ini sekarang.")
-                .setText(input)
+                .setText(kalimat)
                 .startChooser()
         }
     }
-
 
     @SuppressLint("SetTextI18n")
     private fun checkSentiment() {
         hideKeyboard()
 
-        input = fragmentHomeBinding.inputComment.text.toString()
+        kalimat = fragmentHomeBinding.inputComment.text.toString()
 
-        val labelTiga = arrayOf("pemerintah","pemerintahan","KPK", "polisi", "pejabat")
+        val labelTiga = arrayOf("pemerintah","pemerintahan","KPK", "polisi", "pejabat", "dpr")
         val labelEmpat = arrayOf("kamu", "dia", "seperti")
-        val labelLima = arrayOf("bunuh", "laporin", "hancur", "kubunuh", "sebarin", "menyebarkan","bongkar", "hilang")
-        val labelEnam = arrayOf("kristen","islam","buddha","konghucu","budha","hindu","katolik", "agama")
+        val labelLima = arrayOf("bunuh", "laporin", "hancur", "kubunuh", "sebarin", "menyebarkan","bongkar", "hilang", "bom")
+        val labelEnam = arrayOf("kristen","islam","buddha","konghucu","budha","hindu","katolik", "agama", "arab", "cina")
 
         fragmentHomeBinding.progressBar.visibility = View.VISIBLE
-        fragmentHomeBinding.imgNotOk.visibility = View.INVISIBLE
-        fragmentHomeBinding.imgOk.visibility = View.INVISIBLE
-        fragmentHomeBinding.langgarPasalDetected.visibility = View.INVISIBLE
-        fragmentHomeBinding.btnSend.visibility = View.INVISIBLE
-        fragmentHomeBinding.undangUndang.visibility = View.INVISIBLE
-
-        input = fragmentHomeBinding.inputComment.text.toString()
-        if (input.isEmpty()) {
-            fragmentHomeBinding.imgNotOk.visibility = View.INVISIBLE
-            fragmentHomeBinding.imgOk.visibility = View.INVISIBLE
-            fragmentHomeBinding.langgarPasalDetected.visibility = View.INVISIBLE
-            fragmentHomeBinding.btnSend.visibility = View.INVISIBLE
-            fragmentHomeBinding.progressBar.visibility = View.INVISIBLE
-            fragmentHomeBinding.undangUndang.visibility = View.INVISIBLE
-        }
 
         val factory = ViewModelFactory.getInstance(requireContext())
         homeViewModel = ViewModelProvider(this, factory)[HomeViewModel::class.java]
 
-        homeViewModel.getSentiment(input).observe(viewLifecycleOwner, { sentiment ->
+        homeViewModel.getSentiment(kalimat).observe(viewLifecycleOwner, { sentiment ->
             fragmentHomeBinding.tvSentimen.text = sentiment.sentimen.toString()
             when (fragmentHomeBinding.tvSentimen.text) {
                 "Negatif" -> {
 
                     fragmentHomeBinding.imgNotOk.visibility = View.VISIBLE
-                    fragmentHomeBinding.imgOk.visibility = View.INVISIBLE
-                    fragmentHomeBinding.langgarPasalDetected.visibility = View.INVISIBLE
-                    fragmentHomeBinding.btnSend.visibility = View.INVISIBLE
+                    fragmentHomeBinding.kataKasarDetected.visibility = View.VISIBLE
                     fragmentHomeBinding.progressBar.visibility = View.INVISIBLE
-                    fragmentHomeBinding.undangUndang.visibility = View.INVISIBLE
 
                     for (badWords in labelTiga.indices){
                         val badWord = labelTiga[badWords]
-                        if (input.toLowerCase(Locale.ROOT).contains(badWord)){
-                            fragmentHomeBinding.imgNotOk.visibility = View.VISIBLE
-                            fragmentHomeBinding.imgOk.visibility = View.INVISIBLE
-                            fragmentHomeBinding.langgarPasalDetected.visibility = View.VISIBLE
-                            fragmentHomeBinding.btnSend.visibility = View.INVISIBLE
-                            fragmentHomeBinding.progressBar.visibility = View.INVISIBLE
+                        if (kalimat.toLowerCase(Locale.ROOT).contains(badWord)){
+                            visibleLanggarPasal(true)
                             fragmentHomeBinding.undangUndang.text = "Menghina Pemerintah atau Badan Umum : Pasal 207 KUHP & Pasal 208 KUHP"
-                            fragmentHomeBinding.undangUndang.visibility = View.VISIBLE
                         }
                     }
                     for (badWords in labelEmpat.indices){
                         val badWord = labelEmpat[badWords]
-                        if (input.toLowerCase(Locale.ROOT).contains(badWord)){
-                            fragmentHomeBinding.imgNotOk.visibility = View.VISIBLE
-                            fragmentHomeBinding.imgOk.visibility = View.INVISIBLE
-                            fragmentHomeBinding.langgarPasalDetected.visibility = View.VISIBLE
-                            fragmentHomeBinding.btnSend.visibility = View.INVISIBLE
-                            fragmentHomeBinding.progressBar.visibility = View.INVISIBLE
+                        if (kalimat.toLowerCase(Locale.ROOT).contains(badWord)){
+                            visibleLanggarPasal(true)
                             fragmentHomeBinding.undangUndang.text = "Menghina atau Mencemari Nama Baik Orang Lain : Pasal 27 ayat (3) UU ITE"
-                            fragmentHomeBinding.undangUndang.visibility = View.VISIBLE
                         }
                     }
                     for (badWords in labelLima.indices){
                         val badWord = labelLima[badWords]
-                        if (input.toLowerCase(Locale.ROOT).contains(badWord)){
-                            fragmentHomeBinding.imgNotOk.visibility = View.VISIBLE
-                            fragmentHomeBinding.imgOk.visibility = View.INVISIBLE
-                            fragmentHomeBinding.langgarPasalDetected.visibility = View.VISIBLE
-                            fragmentHomeBinding.btnSend.visibility = View.INVISIBLE
-                            fragmentHomeBinding.progressBar.visibility = View.INVISIBLE
+                        if (kalimat.toLowerCase(Locale.ROOT).contains(badWord)){
+                            visibleLanggarPasal(true)
                             fragmentHomeBinding.undangUndang.text = "Mengancam Orang Lain : Pasal 29 UU ITE"
-                            fragmentHomeBinding.undangUndang.visibility = View.VISIBLE
                         }
                     }
                     for (badWords in labelEnam.indices){
                         val badWord = labelEnam[badWords]
-                        if (input.toLowerCase(Locale.ROOT).contains(badWord)){
-                            fragmentHomeBinding.imgNotOk.visibility = View.VISIBLE
-                            fragmentHomeBinding.imgOk.visibility = View.INVISIBLE
-                            fragmentHomeBinding.langgarPasalDetected.visibility = View.VISIBLE
-                            fragmentHomeBinding.btnSend.visibility = View.INVISIBLE
-                            fragmentHomeBinding.progressBar.visibility = View.INVISIBLE
+                        if (kalimat.toLowerCase(Locale.ROOT).contains(badWord)){
+                            visibleLanggarPasal(true)
                             fragmentHomeBinding.undangUndang.text = " Menyinggung SARA : Pasal 28 ayat (2) UU ITE"
-                            fragmentHomeBinding.undangUndang.visibility = View.VISIBLE
                         }
                     }
                 }
                 "Positif" -> {
-                    fragmentHomeBinding.imgNotOk.visibility = View.INVISIBLE
-                    fragmentHomeBinding.imgOk.visibility = View.VISIBLE
-                    fragmentHomeBinding.langgarPasalDetected.visibility = View.INVISIBLE
-                    fragmentHomeBinding.btnSend.visibility = View.VISIBLE
-                    fragmentHomeBinding.progressBar.visibility = View.INVISIBLE
-                    fragmentHomeBinding.undangUndang.visibility = View.INVISIBLE
+                    visibleLanggarPasal(false)
+                }
+                "Netral" -> {
+                    visibleLanggarPasal(false)
                 }
                 else -> {
-                    fragmentHomeBinding.imgNotOk.visibility = View.INVISIBLE
-                    fragmentHomeBinding.imgOk.visibility = View.INVISIBLE
-                    fragmentHomeBinding.langgarPasalDetected.visibility = View.INVISIBLE
-                    fragmentHomeBinding.btnSend.visibility = View.INVISIBLE
-                    fragmentHomeBinding.progressBar.visibility = View.INVISIBLE
-                    fragmentHomeBinding.undangUndang.visibility = View.INVISIBLE
+                    visibleLanggarPasal(false)
                 }
             }
         })
@@ -183,7 +137,9 @@ class HomeFragment : Fragment() {
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
                 fragmentHomeBinding.imgNotOk.visibility = View.INVISIBLE
                 fragmentHomeBinding.imgOk.visibility = View.INVISIBLE
+                fragmentHomeBinding.kataKasarDetected.visibility = View.INVISIBLE
                 fragmentHomeBinding.langgarPasalDetected.visibility = View.INVISIBLE
+                fragmentHomeBinding.pasalCard.visibility = View.INVISIBLE
                 fragmentHomeBinding.btnSend.visibility = View.INVISIBLE
                 fragmentHomeBinding.progressBar.visibility = View.INVISIBLE
                 fragmentHomeBinding.undangUndang.visibility = View.INVISIBLE
@@ -201,5 +157,19 @@ class HomeFragment : Fragment() {
     private fun Context.hideKeyboard(view: View) {
         val inputMethodManager = getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
         inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
+    }
+
+    private fun visibleLanggarPasal(state: Boolean) {
+        if (state) {
+            fragmentHomeBinding.imgNotOk.visibility = View.VISIBLE
+            fragmentHomeBinding.kataKasarDetected.visibility = View.VISIBLE
+            fragmentHomeBinding.langgarPasalDetected.visibility = View.VISIBLE
+            fragmentHomeBinding.pasalCard.visibility = View.VISIBLE
+            fragmentHomeBinding.undangUndang.visibility = View.VISIBLE
+        } else {
+            fragmentHomeBinding.progressBar.visibility = View.INVISIBLE
+            fragmentHomeBinding.imgOk.visibility = View.VISIBLE
+            fragmentHomeBinding.btnSend.visibility = View.VISIBLE
+        }
     }
 }
