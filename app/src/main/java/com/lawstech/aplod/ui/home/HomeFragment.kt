@@ -71,7 +71,12 @@ class HomeFragment : Fragment() {
         val labelLima = arrayOf("bunuh", "laporin", "hancur", "kubunuh", "sebarin", "menyebarkan","bongkar", "hilang", "bom")
         val labelEnam = arrayOf("kristen", "islam", "buddha", "konghucu", "budha", "hindu","katolik", "agama", "arab", "cina")
 
-        fragmentHomeBinding.progressBar.visibility = View.VISIBLE
+        if (kalimat.isEmpty()){
+            fragmentHomeBinding.progressBar.visibility = View.INVISIBLE
+        }
+        else{
+            fragmentHomeBinding.progressBar.visibility = View.VISIBLE
+        }
 
         val factory = ViewModelFactory.getInstance(requireContext())
         homeViewModel = ViewModelProvider(this, factory)[HomeViewModel::class.java]
@@ -110,7 +115,7 @@ class HomeFragment : Fragment() {
                         val badWord = labelEnam[badWords]
                         if (kalimat.toLowerCase(Locale.ROOT).contains(badWord)){
                             visibleLanggarPasal(true)
-                            fragmentHomeBinding.undangUndang.text = " Menyinggung SARA : Pasal 28 ayat (2) UU ITE"
+                            fragmentHomeBinding.undangUndang.text = "Menyinggung SARA : Pasal 28 ayat (2) UU ITE"
                         }
                     }
                 }
