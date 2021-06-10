@@ -2,7 +2,7 @@
 
 # Bangkit 2021 Capstone Team : Law's Tech Team (B21-CAP0036)
 
-Hellow. Here is our repository for Bangkit 2021 Capstone project. Our team consist of 2 Machine Learning, 2 Android, and 2 Cloud Computing.
+Hello everyone!. Here is our repository for Bangkit 2021 Capstone project. Our team consist of 2 Machine Learning, 2 Android, and 2 Cloud Computing.
  
 
 ## Our Knights
@@ -17,7 +17,7 @@ Hellow. Here is our repository for Bangkit 2021 Capstone project. Our team consi
 |    Annisaa Utami      |  A2242180  |      Android     |
 
 ## What is this project
-We make a mobile application named APLOD (Aman Pesannya Let’s gO uploaD). APLOD is a hate speech comment detector application integrated with ITE Law. With this application, everyone can check whether a sentence contains harmful words that can violate ITE Law before uploading it to social media. We want to reduce hate comments made by Indonesian people on social media platforms such as Twitter, Instagram, etc. Hate comments not only can hurt someone but also can lead to ITE Law violation.
+We make a mobile application named **APLOD** (Aman Pesannya Let’s gO uploaD). **APLOD** is a hate speech comment detector application integrated with ITE Law. With this application, everyone can check whether a sentence contains harmful words that can violate ITE Law before uploading it to social media. We want to reduce hate comments made by Indonesian people on social media platforms such as Twitter, Instagram, etc. Hate comments not only can hurt someone but also can lead to ITE Law violation.
 
 <img src="https://user-images.githubusercontent.com/55023518/121036560-09223700-c7d9-11eb-8462-714a6715c4c2.jpg" alt="Logo" width="250" height="550">&nbsp; &nbsp;
 <img src="https://user-images.githubusercontent.com/55023518/121303962-ea7d8680-c925-11eb-8196-8714a9295695.jpg" alt="Logo" width="250" height="550">&nbsp; &nbsp;
