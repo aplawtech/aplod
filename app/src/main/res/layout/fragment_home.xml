@@ -110,7 +110,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/paper_plane"
+        android:background="@drawable/custom_button"
         android:visibility="invisible"
         android:layout_marginBottom="50dp"
         app:layout_constraintEnd_toEndOf="parent"
